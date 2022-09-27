@@ -1,30 +1,42 @@
 class Product{
-	public static void main(String[] data)
-	{
-		System.out.println("main start");
+	public static void main(String[] items){
+	
+	if(items.length==5)
+		{	
+		String name=items[0];
+		String type=items[1];
+		String price=items[2];
+		String quality=items[3];
+		String quantity=items[4];
 		
-		String name=data[0];
-		System.out.println("product name="+ name);
 		
-		String type=data[1];
-		System.out.println("product type="+ type);
 		
-		String price=data[2];
-		System.out.println("product price="+ price);
+			System.out.println("entered to store");
 		
-		String quantity=data[3];
-		System.out.println("product quantity="+ quantity);
+		System.out.println("product name:"+items[0]);
+		System.out.println("product type:"+items[1]);
 		
-		String quality=data[4];
-		System.out.println("product quality="+ quality);
+		int ref1=Integer.parseInt(price);
+		System.out.println("Price:"+ref1);
 		
-		int convertedPrice=Integer.parseInt(price);
-		System.out.println("convertedPrice="+convertedPrice);
+		System.out.println("quality:"+quality);
+		int ref2=Integer.parseInt(quantity);
 		
-		int convertedQuantity=Integer.parseInt(quantity);
-		System.out.println("convertedQuantity="+convertedQuantity);
+		System.out.println("quality:"+ref2);
 		
-		int totalPrice=convertedPrice*convertedQuantity;
-		System.out.println("totalPrice="+totalPrice);
+		int total=ref1*ref2;
+		System.out.println("Total price:"+total);
+		}
+	else{
+			System.out.println("need minimum 5 details like name,type,price,quality,quantity");
+		}
+		
+		System.out.println("exit from store");
+		
+		
+		
+		
 	}
+	
+	
 }
