@@ -8,19 +8,9 @@ class TempleDataOperator{
 		System.out.println("nadita ede");
 		
 		temple[position]=name;
-		position++;
+		
 		System.out.println("position"+position+ "is"+temple[position]);
-		
 		position++;
-		
-		
-		
-		for(int index=0;index<=temple.length;index++)
-		{
-		
-			System.out.println(index);
-		System.out.println("position="+temple[position]);
-		}
 		
 		System.out.println("mugitu"); 
 		
